@@ -1,0 +1,71 @@
+/*!
+Theme Name:   Estore Child
+Template:     estore
+Theme URI:    https://github.com/raymacz/
+Author:       Raymacz
+Author URI:   http://webmacz.cf/
+Version:      1.0.0
+Description:  Estore Child Theme.
+License:      GNU General Public License v3
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL..
+Use it to make something cool, have fun, and share what you've learned with others.
+
+/* Put your custom CSS styles here. */
+/* #cont-loc { */
+
+/* add to cart button arrow */
+.single_add_to_cart_button.fa:before {
+  padding-right: 10px;
+}
+
+/* move single meta template */
+.single-product.woocommerce-page .product .product_meta {
+    margin: 40px 0;
+}
+
+/* adjust image single product */
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    width: 38%;
+}
+
+/* adjust summary single product */
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    width: 58%;
+}
+
+/* price sale */
+h1.product_title.entry-title {
+    width: 100%;
+}
+.price>span.saveprice {
+    font-size: larger;
+    color: red;
+    display: block;
+}
+.single-product.woocommerce-page .product .summary .price {
+    float: left;
+}
+p.price {
+    display: block;
+    margin-left: 10px;
+}
+
+
+/* checkout page - hide navigation, sidebar, search, etc. */
+
+.woocommerce-checkout .wishlist-cart-wrapper,
+.woocommerce-checkout .bottom-header-wrapper,
+.woocommerce-checkout aside#secondary
+{
+  display:none;
+}
+.woocommerce-checkout #primary {
+    width: 100%;
+}
+
+/*cart button hover */
+.woocommerce a.button:hover {
+  color: white;
+}
